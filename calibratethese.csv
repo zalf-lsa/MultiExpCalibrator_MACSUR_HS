@@ -1,0 +1,3 @@
+name,position in array,low,high,stepsize,optguess,minbound,maxbound
+StageTemperatureSum,2,40,1000,20,500,40,1000
+StageTemperatureSum,3,40,1000,20,200,40,1000

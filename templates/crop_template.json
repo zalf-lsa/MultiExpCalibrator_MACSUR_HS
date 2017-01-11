@@ -1,0 +1,42 @@
+  {
+	"__UNDERSCORES IN FRONT MEANS IGNORE THE KEY, this is just to keep a valid JSON file": "",
+	"__!!! check and beautify JSON files with http://codebeautify.org/jsonviewer !!!": "",
+	
+	"__this is the path which is prepended to 'include-from-file' paths, if they are relative paths": "",
+	"_include-file-base-path": "",
+	
+	"__user defined crops section to be used via references": "",
+	"crops": {
+		"WW": {
+			"cropParams": {
+				"species": ["include-from-file", ""],
+				"cultivar": ["include-from-file", ""]
+			},
+			"residueParams": ["include-from-file", "C:/Users/stella/Documents/GitHub/monica-parameters/crop-residues/wheat.json"]
+		}
+	},
+	
+	"__user defined fertilizer parameteres section to be used via references": "",
+	"fert-params": {
+		"AP": ["include-from-file", "C:/Users/stella/Documents/GitHub/monica-parameters/mineral-fertilisers/AP.json"],
+		"UAN": ["include-from-file", "C:/Users/stella/Documents/GitHub/monica-parameters/mineral-fertilisers/UAN.json"]
+	}, 
+	
+	
+	"__absolute date crop rotation example": "",
+  	"cropRotation": [
+		{
+			"worksteps": [
+
+				{ "date": "2007-03-13", "type": "Seed", "crop": ["ref", "crops", "WW"] },				
+				{ "date": "2007-06-14", "type": "Harvest", "crop": ["ref", "crops", "WW"] }
+			]
+		}
+	],
+
+	"__general crop parameters for the monica model": "",
+	"_db_CropParameters": ["_include-from-db", {"type": "crop-params", "name": "hermes"}],
+	"CropParameters": {
+		"DEFAULT": ["include-from-file", "C:/Users/stella/Documents/GitHub/monica-parameters/user-parameters/hermes-crop.json"]
+	}
+}
